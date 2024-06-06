@@ -1,0 +1,44 @@
+Access Limiting - Done 
+  - Customer - Auth/login - D
+             - users/signup - D
+             - activities/All - view all activities - D
+             - activities/byLocation/location - D
+             - activities/byName/name - D
+             - users/forCustomer/userId - user dashboard - D
+             - users/userId - PUT - D
+             - users/userId - DELETE - D
+             - bookings/byUserId/userid - view all bookings of the user - D
+             - bookings/forCustomer/getById/bookingId - view one booking - D
+             - bookings/cancel/bookingId - cancel an activity - D
+             - activities/forCustomer/activityId - view one activity - D
+             - experiences/byActivityId/activityId - get all experiences on an activity - D
+             - bookings/make - make a booking - D
+             - experiences/ - write a comment and give rating - D
+ - Admin - Auth/login - D
+         - users/signup - D
+         - activities/byLocation/location -D
+         - activities/byName/name - D
+         - activities/All - view all activities - D
+         - users/forAdmin/userId - user dashboard - D
+         - users/userId - PUT - D
+         - users/userId - DELETE - D
+         - users/ - get all users - D
+         - bookings/byUserId/userid - view all bookings of one user- D
+         - bookings/forAdmin/getById/bookingId - view one booking - D
+         - activities/forAdmin/activityId - view one activity - D
+         - experiences/byActivityId/activityId - get all experiences on an activity - D
+         - bookings/byActivityId/activityId - view all bookings on one activity - D
+
+ - Expert - Auth/login - D
+          - users/signup - D
+          - activities/byExpert/expertId(userId) - view all activities listed by him - D
+          - users/forExpert/userId - user dashboard - D
+          - users/userID - POST - D
+          - users/userID - DELETE - D
+          - activities/add - add an activity -D
+          - activities/activityId - PUT - D
+          - activities/activityId - DELETE - D
+          - experiences/byActivityId/activityId - get all experiences on an activity - D
+          - activities/forExpert/expertId(userId) - view one activity - D
+          - bookings/byActivityId/activityId - view all bookings on one activity - D
+          - bookings/forExpert/getById/bookingId - view one booking - D

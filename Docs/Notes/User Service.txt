@@ -1,0 +1,30 @@
+User Service 
+The User Microservice is a pivotal component of our application, facilitating user registration, authentication, and management. It supports user registration as Customers, Experts, or Admins, ensuring a personalized and secure experience.
+
+Key Features:
+User Registration and Authentication:
+
+Registration: Users can register under three distinct roles - Customer, Expert, or Admin, tailoring their experience and access based on their role.
+Authentication: Secure login and signup processes ensure that user data remains protected, with tokens generated upon successful login containing the user's email, userID, and role.
+Token Generation and Role-Based Access Control:
+
+Token Generation: A secure token is generated on login, embedding the user's email, userID, and role, which is used for authentication in subsequent requests.
+Role-Based Access: The system enforces strict role-based access control:
+Admins: Can view and manage details of all users.
+Experts: Can add, delete, and update activities.
+Customers: Can book activities and access customer-specific features.
+User Management:
+
+Profile Management: Users can edit and delete their personal details, maintaining control over their information.
+Personal Data Retrieval: Users have the ability to fetch their own details at any time, ensuring transparency and access to their data.
+Administrative Oversight: Admins can fetch details of all users, providing comprehensive oversight and management capabilities.
+Security and Scalability:
+
+Security: Implements robust, industry-standard security measures to protect user data from unauthorized access and breaches.
+Scalability: Designed to handle a growing and diverse user base efficiently, ensuring performance remains optimal as the application scales.
+By integrating these features, the User Microservice ensures a secure, efficient, and user-friendly environment where users can manage their profiles, and administrators can maintain oversight, all while adhering to stringent security protocols.
+
+
+PPT - The User Microservice enables users to register as Customers, Experts, or Admins, providing secure authentication and role-based access control. Users can edit, delete, and fetch their personal details, while Admins can view and manage all user accounts. A secure token is generated on login, embedding the user's email, userID, and role. This service ensures robust security and scalability, handling diverse user management needs efficiently.
+
+

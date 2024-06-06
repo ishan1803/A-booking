@@ -1,0 +1,30 @@
+Activity Microservice 
+
+At the core of our application, the Activity Microservice orchestrates the management and interaction with activities, catering to the distinct roles of Experts, Admins, and Customers.
+
+Key Features:
+Activity Management:
+
+Expert Functions: Empowers Experts to seamlessly add, update, and delete activities, ensuring dynamic content creation and curation.
+Admin Oversight: Grants Admins visibility into all activities, facilitating comprehensive management and supervision.
+Customer Interaction:
+
+Booking Functionality: Enables Customers to easily browse and book activities of interest, fostering engagement and participation.
+Homepage Display:
+
+Customized Views: Tailors the homepage to each user role:
+Customers and Admins: Presents all activities as visually engaging cards, providing an intuitive browsing experience.
+Experts: Displays activities listed by the respective Expert, streamlining their management workflow.
+Scalability and Efficiency:
+
+
+Efficient Operations: Optimizes operations for swift access to activities, serach activities based on name and location, enhancing user satisfaction and system reliability.
+
+Enhanced User Experience:
+
+Intuitive Interface: Offers an intuitive and user-friendly interface, facilitating seamless navigation and interaction with activities.
+Personalization: Delivers personalized experiences tailored to each user's role and preferences, fostering engagement and satisfaction.
+Through these comprehensive features, the Activity Microservice serves as a cornerstone of our application, empowering users to interact with activities effortlessly while ensuring seamless management and oversight for administrators.
+
+
+PPT - The Activity Microservice enables Experts to add, update, and delete activities, grants Admins visibility into all activities, and allows Customers to book activities. It customizes the homepage display based on user roles: Customers and Admins view all activities as cards, while Experts see activities listed by them. Built for efficiency, it ensures a seamless user experience through intuitive interfaces and personalized interactions.

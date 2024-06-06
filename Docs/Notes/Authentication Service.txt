@@ -1,0 +1,33 @@
+Authentication Service
+
+The Authentication Service is responsible for managing the login and signup functionalities within the application. Upon successful login, it generates a token containing essential user information, such as the email, userID, and role. This role-based token is pivotal in ensuring that users can only access functionalities pertinent to their permissions.
+
+Key Features:
+1.Login and Signup:
+Provides secure login and signup processes for users.
+Ensures data integrity and security during authentication.
+
+2.Token Generation:
+Generates a secure token upon login, embedding the user's email, userID, and role.
+Tokens are used for subsequent authentication and authorization processes.
+
+3.Role-Based Access Control:
+Admin:
+Access to view all users.
+Expert:
+Can add, delete, or update activities.
+Customer:
+Can book activities.
+Other roles with specific permissions can also be defined as needed.
+
+4.Security:
+Implements industry-standard security measures to protect user data.
+Ensures that tokens are securely generated and validated.
+
+
+PPT - Login and Signup: Manages secure login and signup functionalities
+Token Generation: Creates a secure token with email, userID, and role
+Role-Based Access:
+Admins: View all users etc.
+Experts: Manage activities etc.
+Customers: Book activities etc.

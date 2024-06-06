@@ -1,0 +1,30 @@
+Experience Microservice 
+
+The Experience Microservice is an integral part of our Adventure Activity Booking application, enabling users to share and manage their experiences seamlessly.
+
+Key Features:
+
+1.Customer Interactions:
+Write Comments and Ratings: Customers can write detailed comments and provide a rating from 1 to 5 for each activity they participate in, sharing valuable feedback and insights.
+Update Experiences: Customers have the flexibility to update their comments and ratings, ensuring their feedback remains accurate and relevant.
+
+2.Expert Oversight:
+View Experiences: Experts can access all comments and ratings related to the activities they have listed, allowing them to gain insights into customer satisfaction and areas for improvement.
+
+3.Admin Management:
+Comprehensive Access: Admins can view all experiences across all activities, providing them with a holistic view of customer feedback and engagement.
+Manage Feedback: Admins can oversee the overall experience feedback to ensure quality and address any issues or concerns promptly.
+
+4.Data Storage:
+MySQL Database: All experiences, including comments and ratings, are stored in a MySQL database, ensuring reliable and scalable data management.
+
+PPT - Experience Microservice
+
+Customer Interactions:
+Write and update comments and ratings (1-5) for activities
+Expert Oversight:
+View all experiences for their listed activities
+Admin Management:
+View all experiences across all activities
+Data Storage:
+MongoDB database ensures reliable and scalable data management

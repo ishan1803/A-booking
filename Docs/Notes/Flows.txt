@@ -1,0 +1,155 @@
+This is how a customer will go in the diagram 
+1st page - Login form with Signup button - auth/login
+2nd page - Signup button will take you to Signup page with signup form, It will redirect to login page upon successful signup - users/signup
+3nd - On successful Login - 
+        - All activities will be listed here - activities/All
+        - Each activity will appear as a card
+        - There will be 2 search bars 
+            - activities/byLocation - will redirect - 4th page - activities/byLocation
+            - activities/byName  - will redirect - 5th page - activities/byName 
+       - Button - User - on clicking - 6th - User dashboard will open- users/forCustomer / userId
+6th - User dashboard 
+       - All user details - This will be One single card
+       - UPDATE Button - will take you to update form where user can update details 
+       - Bookings Button - will redirect to - 7th page - Booking details of the customer - bookings/byUserId/userId
+7th - Bookings
+      - Each booking will come as a card 
+      - On clicking a card - will redirect to 8th page - single booking details - bookings/forCustomer/getById
+8th - Booking details 
+      - All details will come as a single card 
+      - there will be a cancel button for the customer to cancel a booking - bookings/cancel/id 
+3rd - Each activity is listed as a card 
+      - On clicking a card - will redirect to - 9th - single activity details - activities/forCustomer/activityId
+9th- All activity details will come as a single card 
+     - Reviews Button - You can check reviews for that activity - will redirect to 10th page - experiences/byActivityId (This page will have all the reviews for the activity - each revies will come as a single card )
+     - Book Button - this will book the activity - bookings/make
+     - Give Review Button - will take you to a form  to write a comment and give review - experiences/
+
+This is how an admin will go in the system
+1st page - Login form with Signup button - auth/login
+2nd page - Signup button will take you to Signup page with signup form, It will redirect to login page upon successful signup - users/signup
+3nd - On successful Login - 
+        - All activities will be listed here - activities/All
+        - Each activity will appear as a card
+        - There will be 2 search bars 
+            - activities/byLocation - will redirect - 4th page - activities/byLocation
+            - activities/byName  - will redirect - 5th page - activities/byName 
+       - Button - User - on clicking - 6th - User dashboard will open- users/forAdmin / userId
+6th - User dashboard 
+       - All user details - This will be One single card
+       - UPDATE Button - will take you to update form where user can update details 
+       - All Users Button - will redirect to - 7th page - All users will be listed here - users/
+7th - All Users
+      - Each user will come as a card 
+      - On clicking a card - will redirect to 8th page - All bookings of that user - bookings/byUserId/userId
+8th - Bookings 
+      - Each booking will come as a card
+     - on clicking on a card - will redirect to 9th page - Booking details of a single booking (This will come as a single card) - bookings/forAdmin/getById
+3rd - Each activity is listed as a card 
+      - On clicking a card - will redirect to - 10th - single activity details - activities/forAdmin/activityId
+10th- All activity details will come as a single card 
+     - Reviews Button - You can check reviews for that activity - will redirect to 11th page - experiences/byActivityId (This page will have all the reviews for the activity - each revies will come as a single card )
+    - Bookings Button - will redirect you to 11th page - All the bookings for that activity - bookings/byActivityId/activityId
+11th page - Each booking will appear as a card 
+                on clicking on a card - will redirect to 9th page - Booking details of a single booking (This will come as a single card) - bookings/forAdmin/getById
+
+This is how exeprt will go in the system 
+1st page - Login form with Signup button - auth/login
+2nd page - Signup button will take you to Signup page with signup form, It will redirect to login page upon successful signup - users/signup
+3rd page - On successful Login - 
+         - All the activities by that expert will be listed there - activities/byExpert/expertId
+         - Each activity will appear as a card
+         - Button - User - on clicking - 4th - User dashboard will open- users/forAdmin / userId
+         - Button - User - This will open a form to add an activity in the system 
+4th- User dashboard - users/forExpert/userId
+       - All user details - This will be One single card
+       - UPDATE Button - will take you to update form where user can update details 
+3rd - Each activity is listed as a card 
+      - On clicking a card - will redirect to - 5th - single activity details - activities/forExpert/activityId
+5th - all activity details will come as a single card 
+     - Reviews Button - You can check reviews for that activity - will redirect to 7th page - experiences/byActivityId (This page will have all the reviews        for the activity - each revies will come as a single card )
+     - There will be an UPDATE button - this will open a form to update the details of that activity
+     - DELETE button - This will delete the activity and redirect to 3rd page 
+     - Bookings Button - will redirect you to 6th page - All the bookings for that activity - bookings/byActivityId/activityId
+6th - Bookings 
+      - Each booking will come as a card
+     - on clicking on a card - will redirect to 9th page - Booking details of a single booking (This will come as a single card) - bookings/forExpert/getById
+
+Microservice File Architecture 
+
+-Activity Microservice 
+----- src
+ ---- Main
+ --- Java 
+ -- controller 
+  - Activity Controller
+ -- dto
+  - ActivityDTO
+ -- entity
+  - Activity 
+  - CustomErrorObj
+ -- exceptions 
+  - BadRequestExcception
+  - ForbiddenException 
+  - GlobalExceptionHandler
+  - InternalServerErrorException
+  - ResourceNotFoundException
+  - UnauthorizedException
+ -- repository
+  - ActivityDBRepository
+ -- service
+  - impl 
+    ->ActivityServiceImplementation 
+  - ActivityService
+ - ActivityServiceApplication 
+---- resources 
+ - application.yml
+----- test 
+ - ApplicationServiceTests
+
+-User Microservice 
+----- src
+ ---- Main
+ --- Java 
+ -- config 
+  - ApplicationConfiguration
+ -- controller 
+  - UserController
+  - AuthenticationController
+ -- dto
+  - UserDTO
+  - RegisterDTO
+ -- entity
+  - UserEntity
+  - Role
+  - RoleType 
+  - CustomErrorObj
+ -- exceptions 
+  - BadRequestExcception
+  - ForbiddenException 
+  - GlobalExceptionHandler
+  - InternalServerErrorException
+  - ResourceNotFoundException
+  - UnauthorizedException
+ -- repository
+  - RoleRepository
+  - UserRepository
+ -- service
+  - impl 
+    ->UserServiceImplementation 
+    ->AuthenticationServiceImplementation
+  - AuthenticationService
+  - UserService
+ - UserServiceApplication 
+---- resources 
+ - application.yml
+----- test 
+ - UserServiceTests
+
+
+
+
+
+
+
+
